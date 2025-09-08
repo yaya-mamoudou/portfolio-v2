@@ -1,39 +1,5 @@
-import React from 'react';
-
-const skills: string[] = [
-	'Tailwind CSS',
-	'Next.js',
-	'React',
-	'TypeScript',
-	'Node.js',
-	'Python',
-	'Nest.js',
-	'PostgreSQL',
-	'Prisma',
-	'GraphQL',
-	'REST',
-	'React Native',
-	'Angular',
-];
-
-function Row({ reverse = false }: { reverse?: boolean }) {
-	const REPEATS = 6; // ensure track width > viewport so no gaps
-	const items = Array.from({ length: REPEATS }).flatMap(() => skills);
-	return (
-		<div className={`marquee ${reverse ? 'marquee--reverse' : ''}`}>
-			<div className='marquee__track py-1'>
-				{items.map((label, idx) => (
-					<span
-						key={`${label}-${idx}`}
-						className='inline-flex bg-white shrink-0 items-center gap-2 rounded-full px-4 py-2 text-sm text-[--color-black] backdrop-blur'
-					>
-						{label}
-					</span>
-				))}
-			</div>
-		</div>
-	);
-}
+import { skills } from '~/mock';
+import Skill from './skill';
 
 export default function AnimatedSkills() {
 	return (
@@ -41,5 +7,19 @@ export default function AnimatedSkills() {
 			<Row />
 			<Row reverse />
 		</section>
+	);
+}
+
+function Row({ reverse = false }: { reverse?: boolean }) {
+	const REPEATS = 6; // ensure track width > viewport so no gaps
+	const items = Array.from({ length: REPEATS }).flatMap(() => skills);
+	return (
+		<div className={`marquee ${reverse ? 'marquee--reverse' : ''}`}>
+			<div className='marquee__track py-1'>
+				{items.map((skill, idx) => (
+					<Skill key={`${skill.label}-${idx}`} label={skill.label} />
+				))}
+			</div>
+		</div>
 	);
 }

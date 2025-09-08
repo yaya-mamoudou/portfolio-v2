@@ -1,16 +1,19 @@
-import Image from 'next/image';
+import AnimatedSkills from '~/components/animated-skills';
 import Hero from '~/components/hero';
 import Navbar from '~/components/navbar';
-import AnimatedSkills from '~/components/animated-skills';
+import Projects from '~/components/projects';
+import Skills from '~/components/skills';
 
 export default function Home() {
 	return (
 		<div className=''>
 			<Navbar />
 			<Hero />
-			<div className='py-8'>
+			<div className='py-4'>
 				<AnimatedSkills />
 			</div>
+			<Projects />
+			<Skills />
 		</div>
 	);
 }
