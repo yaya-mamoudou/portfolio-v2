@@ -13,9 +13,9 @@ export default function Projects() {
 				title='Projects'
 			/>
 
-			<div className='grid gap-20 mt-10 grid-cols-12 flex-wrap'>
+			<div className='grid gap-y-14 md:gap-10 lg:gap-20 w-full mt-10 grid-cols-12'>
 				{projects.map((project, index) => (
-					<div key={index} className=' col-span-12 md:col-span-6 xl:col-span-4'>
+					<div key={index} className='col-span-12 md:col-span-6 xl:col-span-4'>
 						<ProjectCard {...project} key={`${index}-${project.name}`} />
 					</div>
 				))}

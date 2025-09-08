@@ -19,8 +19,8 @@ export default function ProjectCard(props: Project) {
 	}
 
 	return (
-		<div className='space-y-2'>
-			<div className='border border-border rounded-2xl bg-[#B9B9B9]/9 h-[150]'></div>
+		<div className='space-y-2 w-full'>
+			<div className='border border-border rounded-2xl bg-[#B9B9B9]/9 h-[150px]'></div>
 			<div>
 				<Link className='hover:underline' href={props.link}>
 					<h2 className='text-black font-bold text-md'>{props.name}</h2>

@@ -1,6 +1,6 @@
-export default function CaretIcon() {
+export default function WorkIcon() {
 	return (
-		<svg width='29' height='30' viewBox='0 0 29 30' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg width='22' height='23' viewBox='0 0 29 30' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<path
 				d='M3.57382 15C3.57382 19.4923 3.57382 24.1216 5.14392 25.5165C6.71401 26.9127 9.24189 26.9127 14.2953 26.9127C19.3486 26.9127 21.8765 26.9127 23.4466 25.5165C25.0167 24.1204 25.0167 19.4923 25.0167 15'
 				stroke='#626262'

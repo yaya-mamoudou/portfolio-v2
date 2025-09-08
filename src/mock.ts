@@ -65,3 +65,48 @@ export const projects: Project[] = [
         description: 'A fintech mobile application designed to help Cameroonians build disciplined savings habits. The app allows users to create savings goals, set aside emergency '
     }
 ]
+
+export type WorkType = {
+    company: string;
+    position: string;
+    img: string;
+    url: string;
+    dates: string;
+};
+export const workData: WorkType[] = [
+    {
+        company: 'RecreateApp',
+        position: 'Senior Software Engineer',
+        img: '/images/recreateapp.jpeg',
+        url: 'https://www.linkedin.com/company/recreateapp/',
+        dates: '10/2024 - Present',
+    },
+    {
+        company: 'Bridge Labs',
+        position: 'Frontend Engineer',
+        img: '/images/bridgelabs.jpeg',
+        url: 'https://www.linkedin.com/company/bridgelabstech/about/',
+        dates: '02/2024 - 04/2025',
+    },
+    {
+        company: 'Nkwa',
+        position: 'Software Engineer',
+        img: '/images/nkwa.jpeg',
+        url: 'https://mynkwa.com/',
+        dates: '04/2023 - 01/2025',
+    },
+    {
+        company: 'The Sports Media Agency',
+        position: 'Software Engineer',
+        img: '/images/sfw.jpeg',
+        url: 'https://www.linkedin.com/company/the-sports-media-agency/about/',
+        dates: '01/2023 - 07/2024',
+    },
+    {
+        company: 'Camsol.io',
+        position: 'FullStack Developer',
+        img: '/images/camsol.jpeg',
+        url: 'https://camsoltechnologies.com/en',
+        dates: '08/2022 - 01/2023',
+    },
+];

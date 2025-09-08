@@ -34,14 +34,17 @@ export default function Navbar() {
 
 	return (
 		<div className='container mx-auto z-50'>
-			<Nav classNames={{ wrapper: 'h-[3rem] max-w-full' }} className='text-black py-4 '>
+			<Nav
+				classNames={{ wrapper: 'h-[3rem] max-w-full' }}
+				className='text-black py-4 justify-between '
+			>
 				<NavbarBrand>
 					<AcmeLogo />
 					<p className='font-bold text-inherit text-xl'>Yaya Mamoudou</p>
 				</NavbarBrand>
 
 				<NavbarContent
-					className='hidden px-10  border rounded-full border-border lg:flex gap-4 '
+					className='hidden px-10 ml-auto  border rounded-full border-border lg:flex gap-4 '
 					justify='center'
 				>
 					{navLinks.map((item) => (
@@ -68,7 +71,7 @@ export default function Navbar() {
 							</NavbarMenuItem>
 						))}
 					</NavbarMenu>
-					<NavbarItem className='hidden lg:flex gap-x-3 items-center'>
+					{/* <NavbarItem className='hidden lg:flex gap-x-3 items-center'>
 						{languages.map((lang, index) => (
 							<Fragment key={index}>
 								<Button
@@ -81,7 +84,7 @@ export default function Navbar() {
 								{index + 1 !== languages.length && <div>|</div>}
 							</Fragment>
 						))}
-					</NavbarItem>
+					</NavbarItem> */}
 				</NavbarContent>
 			</Nav>
 		</div>
