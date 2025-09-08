@@ -10,7 +10,7 @@ import { Button } from '@heroui/button';
 
 export default function Hero() {
 	return (
-		<div className='relative  min-h-[80vh] flex '>
+		<div className='relative  min-h-[70vh] flex '>
 			<HeroBaground />
 			<div className='container-2 mx-auto h-full my-auto px-6  flex-col '>
 				<div className='flex h-full z-10 justify-center relative items-center '>
