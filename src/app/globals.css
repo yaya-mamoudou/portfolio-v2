@@ -1,21 +1,47 @@
 @import 'tailwindcss';
+@plugin '../../hero.ts';
+/* Note: You may need to change the path to fit your project structure */
+@source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
 
 :root {
 	--background: #f9f9f9;
 	--foreground: #626262;
 	--accent: #f0af09;
-	--border: #d9d9d9;
+	--border: #18181b0d;
 }
 
 @theme {
 	--color-border: var(--border);
 	--color-accent: var(--accent);
+	--navbar-height: 3rem !important;
+	--color-black: #27272a;
 }
 
 @theme inline {
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
 	--font-sans: var(--font-inter-sans);
+	--navbar-height: 3rem !important;
+}
+
+@utility container-2 {
+	width: 100%;
+	@media (width >= 40rem /* 640px */) {
+		max-width: 40rem /* 640px */;
+	}
+	@media (width >= 48rem /* 768px */) {
+		max-width: 48rem /* 768px */;
+	}
+	@media (width >= 64rem /* 1024px */) {
+		max-width: 64rem /* 1024px */;
+	}
+	@media (width >= 80rem /* 1280px */) {
+		max-width: 80rem /* 1280px */;
+	}
+	@media (width >= 80rem /* 1536px */) {
+		max-width: 80rem /* 1536px */;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
