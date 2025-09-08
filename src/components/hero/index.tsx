@@ -10,9 +10,9 @@ import { Button } from '@heroui/button';
 
 export default function Hero() {
 	return (
-		<div className='relative min-h-[80vh] flex '>
+		<div className='relative  min-h-[80vh] flex '>
 			<HeroBaground />
-			<div className='container-2 mx-auto h-full my-auto  flex-col '>
+			<div className='container-2 mx-auto h-full my-auto px-6  flex-col '>
 				<div className='flex h-full z-10 justify-center relative items-center '>
 					<div className='flex flex-col py-10 justify-center items-center lg:flex-row lg:items-end gap-x-14'>
 						<HeroImage />

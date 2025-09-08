@@ -68,7 +68,7 @@ export default function Navbar() {
 							</NavbarMenuItem>
 						))}
 					</NavbarMenu>
-					<NavbarItem className='flex gap-x-3 items-center'>
+					<NavbarItem className='hidden lg:flex gap-x-3 items-center'>
 						{languages.map((lang, index) => (
 							<Fragment key={index}>
 								<Button
