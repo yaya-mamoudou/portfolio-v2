@@ -1,5 +1,4 @@
 'use client';
-import { Button } from '@heroui/button';
 import {
 	Navbar as Nav,
 	NavbarBrand,
@@ -9,9 +8,8 @@ import {
 	NavbarMenuItem,
 	NavbarMenuToggle,
 } from '@heroui/navbar';
-import { cn } from '@heroui/theme';
 import Link from 'next/link';
-import { Fragment, useState } from 'react';
+import { useState } from 'react';
 import { languages, navLinks } from '~/mock';
 import CaretIcon from './icons/caret-icon';
 
@@ -35,11 +33,14 @@ export default function Navbar() {
 	return (
 		<div className='container mx-auto z-50'>
 			<Nav
+				position='static'
+				isBlurred
+				isMenuOpen={isMenuOpen}
 				classNames={{ wrapper: 'h-[3rem] max-w-full' }}
 				className='text-black py-4 justify-between '
 			>
 				<NavbarBrand>
-					<AcmeLogo />
+					{/* <AcmeLogo /> */}
 					<p className='font-bold text-inherit text-xl'>Yaya Mamoudou</p>
 				</NavbarBrand>
 
@@ -54,8 +55,9 @@ export default function Navbar() {
 					))}
 				</NavbarContent>
 
-				<NavbarContent className='flex gap-4' justify='end'>
+				<NavbarContent className='flex gap-4 lg:hidden' justify='end'>
 					<NavbarMenuToggle
+						onChange={setIsMenuOpen}
 						aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
 						className='min-w-[100px] lg:hidden rounded-full border-border border h-[3rem]'
 						icon={
@@ -66,7 +68,7 @@ export default function Navbar() {
 					/>
 					<NavbarMenu>
 						{navLinks.map((item) => (
-							<NavbarMenuItem key={item.label}>
+							<NavbarMenuItem onClick={() => setIsMenuOpen(false)} key={item.label}>
 								<Link href={item.link}>{item.label}</Link>
 							</NavbarMenuItem>
 						))}

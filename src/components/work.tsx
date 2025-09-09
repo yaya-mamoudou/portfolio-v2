@@ -10,9 +10,9 @@ import DownloadIcon from './icons/download-icon';
 
 export default function Work() {
 	return (
-		<div className='container-2 pt-10 pb-20 px-6'>
+		<div className='container-2 py-20 px-6'>
 			<SectionTitle icon={<WorkIcon />} title='Work' />
-			<div className='border border-border space-y-6 p-4 lg:w-3/5 xl:w-2/5 rounded-2xl'>
+			<div className='border border-border bg-white space-y-6 p-6  rounded-2xl'>
 				{workData.map((work) => (
 					<WorkItem {...work} key={work.company} />
 				))}
@@ -20,7 +20,7 @@ export default function Work() {
 					as={Link}
 					target='_blank'
 					href='https://drive.google.com/file/d/1zgCO2qM0kwky_S1v4ydnrT9qy6BZKc7L/view'
-					className='w-full bg-[#F0F0F0] min-h-[60]'
+					className='w-full bg-[#F0F0F0] min-h-[50]'
 				>
 					Download CV <DownloadIcon />
 				</Button>

@@ -1,6 +1,6 @@
-export default function CaretIcon() {
+export default function EducationIcon() {
 	return (
-		<svg width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'>
+		<svg width='23' height='23' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<g clipPath='url(#clip0_32_1338)'>
 				<path
 					fillRule='evenodd'

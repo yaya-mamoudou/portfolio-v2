@@ -20,14 +20,14 @@ export default function ProjectCard(props: Project) {
 
 	return (
 		<div className='space-y-2 w-full'>
-			<div className='border border-border rounded-2xl bg-[#B9B9B9]/9 h-[150px]'></div>
+			<div className='border border-border rounded-2xl bg-[#B9B9B9]/9 h-[300px]'></div>
 			<div>
 				<Link className='hover:underline' href={props.link}>
 					<h2 className='text-black font-bold text-md'>{props.name}</h2>
 				</Link>
 				<p className='text-sm text-[#848484]'>{props.tools}</p>
 			</div>
-			<div className='border flex items-center gap-2 w-fit px-4 border-[#E4E4E4] bg-[#B9B9B9]/9'>
+			<div className='border flex items-center font-semibold text-sm gap-2 w-fit px-4 border-[#E4E4E4] bg-[#B9B9B9]/9'>
 				<div style={{ background: color }} className='size-[5] rounded-full'></div>
 				{props.type}
 			</div>

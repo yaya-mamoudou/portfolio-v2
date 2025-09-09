@@ -110,3 +110,29 @@ export const workData: WorkType[] = [
         dates: '08/2022 - 01/2023',
     },
 ];
+
+export type Education = {
+    major: string
+    degree: string
+    university: string
+    gpa: string
+}
+
+export const education: Education[] = [
+    {
+        major: 'Software Engineering',
+        degree: 'B.Eng',
+        university: 'University of Buea',
+        gpa: '3.21/4'
+    }
+]
+
+export type LanguageType = {
+    lang: string
+    competence: string
+}
+
+export const spokenLanguages: LanguageType[] = [
+    { lang: '🇬🇧 English', competence: 'Write / Listen / Fluent' },
+    { lang: '🇫🇷 French', competence: 'Write / Listen / Fluent' }
+]

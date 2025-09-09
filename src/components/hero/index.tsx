@@ -10,7 +10,7 @@ import { Button } from '@heroui/button';
 
 export default function Hero() {
 	return (
-		<div className='relative  min-h-[70vh] flex '>
+		<div className='relative min-h-[70vh] flex '>
 			<HeroBaground />
 			<div className='container-2 mx-auto h-full my-auto px-6  flex-col '>
 				<div className='flex h-full z-10 justify-center relative items-center '>
@@ -40,7 +40,7 @@ const HeroBaground = () => (
 	<Image
 		src='/images/abstract-shape-1.svg'
 		alt='Hero'
-		className='size-full absolute -top-14'
+		className='size-full scale-[3] sm:scale-3d  absolute -top-14'
 		width={500}
 		height={500}
 	/>
@@ -50,7 +50,8 @@ const HeroContent = () => {
 	return (
 		<div className='flex-1 space-y-6 flex flex-col items-center lg:mt-0 mt-10 lg:items-start'>
 			<h1 className='text-3xl text-center lg:text-left md:text-5xl xl:text-7xl font-bold text-black'>
-				Senior <br /> Full Stack Developer
+				<span className='text-xl lg:text-3xl'>Hi there 👋 </span>
+				<br /> Full Stack Developer
 			</h1>
 			<p className=' text-center lg:text-left'>
 				Hi, I’m Yaya Mamoudou — a software developer who loves turning ideas into real-world

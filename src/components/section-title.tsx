@@ -7,7 +7,7 @@ type SectionTitleProps = {
 };
 export default function SectionTitle(props: SectionTitleProps) {
 	return (
-		<div className='mb-6'>
+		<div className='mb-4'>
 			<div className='flex gap-x-2 mb-2 items-center'>
 				{props.icon}
 				<h2 className='font-bold text-black text-xl'>{props.title}</h2>

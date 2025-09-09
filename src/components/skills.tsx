@@ -6,7 +6,7 @@ import Skill from './skill';
 
 export default function Skills() {
 	return (
-		<div className='container-2 pt-10 pb-20 px-6'>
+		<div className='container-2 pb-20 px-6'>
 			<SectionTitle icon={<SkillsIcon />} title='Skills' />
 
 			<div className='flex gap-2 flex-wrap'>

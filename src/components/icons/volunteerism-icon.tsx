@@ -1,11 +1,19 @@
-export default function CaretIcon() {
+export default function VolunteerismIcon() {
 	return (
-		<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'>
+		<svg width='28' height='20' viewBox='0 0 25 17' fill='none' xmlns='http://www.w3.org/2000/svg'>
 			<path
-				fill='currentColor'
-				fillRule='evenodd'
-				d='M4.47 9.4a.75.75 0 0 1 1.06 0l6.364 6.364a.25.25 0 0 0 .354 0L18.612 9.4a.75.75 0 0 1 1.06 1.06l-6.364 6.364a1.75 1.75 0 0 1-2.475 0L4.47 10.46a.75.75 0 0 1 0-1.06'
-				clipRule='evenodd'
+				d='M11.375 7.5H13.625C14.2217 7.5 14.794 7.26295 15.216 6.84099C15.6379 6.41903 15.875 5.84674 15.875 5.25C15.875 4.65326 15.6379 4.08097 15.216 3.65901C14.794 3.23705 14.2217 3 13.625 3H10.25C9.575 3 9.0125 3.225 8.675 3.675L2.375 9.75'
+				stroke='#848484'
+				strokeWidth='1'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			/>
+			<path
+				d='M6.875 14.2499L8.675 12.6749C9.0125 12.2249 9.575 11.9999 10.25 11.9999H14.75C15.9875 11.9999 17.1125 11.5499 17.9 10.6499L23.075 5.69994C23.5091 5.28968 23.7625 4.72377 23.7794 4.1267C23.7963 3.52964 23.5753 2.95032 23.165 2.51619C22.7547 2.08206 22.1888 1.82869 21.5918 1.81181C20.9947 1.79494 20.4154 2.01593 19.9813 2.42619L15.2563 6.81369M1.25 8.62494L8 15.3749'
+				stroke='#848484'
+				strokeWidth='1'
+				strokeLinecap='round'
+				strokeLinejoin='round'
 			/>
 		</svg>
 	);
