@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { HeroUIProvider } from '@heroui/system';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const inter = Inter({
 	variable: '--font-geist-mono',
@@ -21,7 +22,10 @@ export default function RootLayout({
 	return (
 		<HeroUIProvider>
 			<html lang='en'>
-				<body className={`${inter.variable} antialiased`}>{children}</body>
+				<body className={`${inter.variable} antialiased`}>
+					{children}
+					<GoogleAnalytics gaId={process.env.GID!} />
+				</body>
 			</html>
 		</HeroUIProvider>
 	);
