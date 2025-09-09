@@ -10,7 +10,7 @@ import DownloadIcon from './icons/download-icon';
 
 export default function Work() {
 	return (
-		<div className='container-2 py-20 px-6'>
+		<div id='work' className='container-2 py-20 px-6'>
 			<SectionTitle icon={<WorkIcon />} title='Work' />
 			<div className='border border-border bg-white space-y-6 p-6  rounded-2xl'>
 				{workData.map((work) => (

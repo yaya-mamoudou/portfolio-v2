@@ -5,7 +5,7 @@ import { education, type Education } from '~/mock';
 
 export default function Education() {
 	return (
-		<div className='container-2 px-6 pb-20'>
+		<div id='education' className='container-2 px-6 pb-20'>
 			<SectionTitle icon={<EducationIcon />} title='Education' />
 			<div>
 				{education.map((item, index) => (

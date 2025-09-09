@@ -1,10 +1,10 @@
 import { ReactNode } from "react";
 
 export const navLinks = [
+    { label: 'Work', link: '#work' },
     { label: 'Projects', link: '#projects' },
-    { label: 'Experience', link: '#' },
-    { label: 'Skills', link: '#' },
-    { label: 'Education', link: '#' },
+    { label: 'Skills', link: '#skills' },
+    { label: 'Education', link: '#education' },
 ];
 
 export const languages = [
@@ -40,6 +40,7 @@ export type Project = {
     type: 'Work' | 'Client' | 'Personal' | 'Fun';
     description: string;
     link: string
+    img: string
 };
 
 export const projects: Project[] = [
@@ -47,23 +48,34 @@ export const projects: Project[] = [
         name: 'Nkwa App',
         tools: 'React Native, Expo, Nest.js',
         type: 'Work',
-        link: '',
+        img: '/images/projects/nkwa.png',
+        link: 'https://apps.apple.com/us/app/nkwa/id1535681910',
         description: 'A fintech mobile application designed to help Cameroonians build disciplined savings habits. The app allows users to create savings goals, set aside emergency '
     },
     {
-        name: 'URL shortener',
-        tools: 'Angular, bootstrap',
-        type: 'Fun',
-        link: '',
-        description: 'A fintech mobile application designed to help Cameroonians build disciplined savings habits. The app allows users to create savings goals, set aside emergency '
+        name: 'Snap Car Rentals',
+        tools: 'Nextjs, TailwindCSS, Prisma, MongoDB',
+        type: 'Client',
+        img: '/images/projects/snapcar.png',
+        link: 'https://snapcarrentals.net/',
+        description: 'Snap Car Rentals is a modern web application for booking cars on demand. It features an intuitive UI for browsing available vehicles, secure booking management, and responsive design for a seamless experience across devices.'
     },
     {
         name: 'NotBroke App',
         tools: 'React Native, Nest.js, ClaudeAi',
         type: 'Work',
-        link: '',
-        description: 'A fintech mobile application designed to help Cameroonians build disciplined savings habits. The app allows users to create savings goals, set aside emergency '
-    }
+        img: '/images/projects/notbroke.png',
+        link: 'https://apps.apple.com/us/app/not-broke/id6739168671?platform=iphone',
+        description: 'NOT BROKE helps you transform your skills into real income with personalized side hustle plans tailored to your schedule and abilities.'
+    },
+    {
+        name: 'URL shortener',
+        tools: 'Angular, bootstrap',
+        type: 'Fun',
+        img: '/images/projects/url-shortener.png',
+        link: 'https://url-shortener-e0ed8.web.app/',
+        description: 'A simple and efficient URL shortener that converts long links into short, shareable ones. It includes link tracking, click analytics, and a clean UI for easy management.'
+    },
 ]
 
 export type WorkType = {

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import type { Project } from '~/mock';
@@ -20,9 +21,17 @@ export default function ProjectCard(props: Project) {
 
 	return (
 		<div className='space-y-2 w-full'>
-			<div className='border border-border rounded-2xl bg-[#B9B9B9]/9 h-[300px]'></div>
+			<div className='border border-border overflow-hidden rounded-2xl bg-[#B9B9B9]/9 h-[400px]'>
+				<Image
+					src={props.img}
+					alt={props.name}
+					width={400}
+					height={400}
+					className='size-full object-cover object-center'
+				/>
+			</div>
 			<div>
-				<Link className='hover:underline' href={props.link}>
+				<Link className='hover:underline' target='_blank' href={props.link}>
 					<h2 className='text-black font-bold text-md'>{props.name}</h2>
 				</Link>
 				<p className='text-sm text-[#848484]'>{props.tools}</p>
@@ -32,7 +41,7 @@ export default function ProjectCard(props: Project) {
 				{props.type}
 			</div>
 
-			<p className='mt-4 line-clamp-2'>{props.description}</p>
+			<p className='mt-4 line-clamp-5'>{props.description}</p>
 		</div>
 	);
 }
